@@ -1,0 +1,382 @@
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="designB.css">
+<link rel="stylesheet" type="text/css" href="design.css">
+<link rel="stylesheet" type="text/css" href="designA.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container
+{
+  width: 100%;  
+  height: 90%;
+  position: relative;
+  margin: auto;
+}
+
+img.slideshow
+{
+    opacity:1;
+    height: 90%;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 1.0s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ul{
+        list-style-type: none;
+        overflow: hidden;
+        padding: 0px;
+        margin: 0px;
+        background-color:green;
+}
+li{
+        font-size: 15px;
+        float:left;
+        text-align: center;
+}
+a{
+        text-decoration: none;
+        color:white;
+        padding: 17px;
+        display: block;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+}   
+li a:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px rgba(0,0,0,0.19);
+    background-color:gray;
+}
+.text-block {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px rgba(0,0,0,0.19);
+ 
+    position: absolute;
+    bottom: 200px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+div#id03,#id04
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px rgba(0,0,0,0.19);
+    position: absolute;
+    top: 200px;
+    left:350px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+label
+{
+    color: grey;
+}
+</style>
+
+<title>Transport Company</title>
+</HEAD> 
+<body> 
+    <header> <b>THE TRANSPORT COMPANY</B> </header>
+<div>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a onclick="document.getElementById('id04').style.display='block'">RECENTLY INSTALLED TRUCKS</a></li>
+        <li><a href="services.jsp">SERVICES</a></li>
+        <li><a onclick="document.getElementById('id03').style.display='block'">CONTACT US</a></li>
+    </ul>
+</div>
+ 
+<div class="slideshow" >
+    <div class="mySlides fade" >
+      <div class="numbertext">1 / 7</div>
+      <img class="slideshow,img-responsive" src="images/truck1.jpg" style="width:100%" >
+      <div class="text">Caption one</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img class="slideshow,img-responsive" src="images/truck.jpeg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img class="slideshow,img-responsive" src="images/truck2.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 7</div>
+      <img class="slideshow,img-responsive" src="images/truck3.jpg" style="width:100%">
+      <div class="text">Caption four</div>
+    </div>
+
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 7</div>
+      <img class="slideshow,img-responsive" src="images/truck4.jpg" style="width:100%">
+      <div class="text">Caption five</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 7</div>
+      <img class="slideshow,img-responsive" src="images/truck5.jpg" style="width:100%">
+      <div class="text">Caption six</div>
+    </div>
+
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 7</div>
+      <img class="slideshow,img-responsive" src="images/truck6.jpg" style="width:100%">
+      <div class="text">Caption seven</div>
+    </div>
+
+
+    <div class="text-block,">
+    <h4>WE ARE PROVIDING<br></H4>
+        <H2>THE BEST </H2>
+    <H4>  SERVICES AND TRANSPORTATION</H4>
+    </div>
+
+</div>
+    
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) 
+    {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length)
+    {
+     	slideIndex = 1;
+    }    
+    for (i = 0; i < dots.length; i++) 
+    {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<br>
+<hr>
+
+<div class="w3-container">
+    <div align="center">
+        <button class="btn1" onclick="document.getElementById('id02').style.display='block' , document.getElementById('id01').style.display='none'">ADMINISTRATOR LOGIN</button>
+        <button class="btn1" onclick="document.getElementById('id02').style.display='none', document.getElementById('id01').style.display='block'">MANAGER LOGIN</button>    
+    </DIV>
+    <div id="id01" style="display:none;">
+            
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+            <div align="center"><br>
+                    <span onclick="document.getElementById('id01').style.display='none',document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
+            
+            <form class="w3-container" action="login" method="post">
+                <div class="w3-section">
+                    <label><b>Username</b></label>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" autofocus name="username" required>
+                    <label><b>Password</b></label>
+                    <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="userpass" required>
+                    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Manager Login</button>
+                </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button onclick="document.getElementById('id01').style.display='none',document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+            </div>
+        </div>
+    </div>
+    
+        <div id="id02" class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px;display: none;">
+            <div align="center"><br>
+                    <span onclick="document.getElementById('id01').style.display='none',document.getElementById('id02').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                    <img src="images/logo.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
+
+            <form class="w3-container" action="adminLoginProcess" method="post">
+                <div class="w3-section">
+                    <label><b>Username</b></label>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="username" autofocus  required>
+                    <label><b>Password</b></label>
+                    <input class="w3-input w3-border" type="password" placeholder="Enter Password" name="userpass" required>
+                    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">ADMIN LOGIN</button>
+                </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button onclick="document.getElementById('id01').style.display='none',document.getElementById('id02').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+            </div>
+        </div>
+    
+    
+    
+    <br>
+    <br>
+</div>
+
+    <div class="w3-container" id="id03" style="display: none;">           
+        
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+           
+            <div align="center"><br>
+                    <span onclick="document.getElementById('id03').style.display='none',document.getElementById('id03').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                    <img src="images/contacts.jpg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
+           
+            <form class="w3-container" action="contactus" method="post">
+                <div class="w3-section">
+                    <label><b>NAME:</b></label>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="NAME" name="name" autofocus  required>
+                    <br>
+                    <label><b>E-MAIL:</b></label>
+                    <input class="w3-input w3-border" type="email" placeholder="E-MAIL" name="email" required>
+                    <br>
+                    <label><b>MESSAGE:</b></label>
+                    <textarea class="w3-input w3-border" placeholder="MESSAGE" name="msg" required></textarea>
+                    <br>
+                    <label><b>MOBILE:</b></label>
+                    <input class="w3-input w3-border" type="text" placeholder="MOBILE NUMBER" name="mobile" required>
+                    <input  type="hidden" name="person" value="USER">                    
+                    <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">SEND</button>
+                </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button onclick="document.getElementById('id03').style.display='none',document.getElementById('id03').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+            </div>
+        </div>
+    </div>
+  
+    <div class="w3-container" id="id04" style="display: none;">                   
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">          
+            <div align="center"><br>
+                    <span onclick="document.getElementById('id04').style.display='none',document.getElementById('id04').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                    <img src="images/truck.jpeg" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+            </div>
+
+            <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit"><a href="recentlyInstallTrucks.jsp">RECENTLY INSTALLED TRUCKS</a></button>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                    <button onclick="document.getElementById('id04').style.display='none',document.getElementById('id04').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>                
+            </div>
+        </div>
+    </div>
+  
+<img class="img-responsive" src="images/2.jpg"> 
+<img class="img-responsive" src="images/service.png">
+
+<footer><div align="center">WELCOME</diV>
+    <address style="font-size:12px;"> 
+        Mumbai Transportation :
+        MASTERS ON TRANSPORT,
+        Lashkaria Green Diamond,
+        Near Oshiwara Park,
+        Opp. Ali Baba Restaurant,
+        Andheri (West)
+        Mumbai – 400102, India
+        93 22 33 00 44
+        <br>
+    </address>
+</footer>
+</body> 
+</html>
